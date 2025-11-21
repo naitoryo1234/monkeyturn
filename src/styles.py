@@ -6,12 +6,29 @@ html, body, [data-testid=\"stAppViewContainer\"] {
   font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;
 }
 
-main.block-container {
-  max-width: 650px;
-  padding-top: 1.2rem;
-  padding-bottom: 4rem;
-}
 
+.summary-row {
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.summary-item {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  background: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.summary-label {
+  font-size: 0.85rem;
+  color: #bfc4c9;
+  margin-bottom: 0.15rem;
+}
+.summary-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #f5f5f5;
+}
 /* Streamlitボタンの視認性を確保 */
 .stButton > button {
   background: linear-gradient(145deg, #1f1f1f, #141414);
@@ -90,3 +107,4 @@ main.block-container {
 }
 </style>
 """
+
