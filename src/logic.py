@@ -1,7 +1,7 @@
 ﻿from __future__ import annotations
 
 import math
-from typing import Dict, Tuple
+from typing import Dict, Tuple, Optional
 
 from .constants import GOAL_THRESHOLDS, PRIOR_PROBS, SETTING_COLORS, SETTING_PROBS, STAGE_BOUNDS
 
@@ -205,7 +205,7 @@ def build_share_text(
     num_hits: int,
     prob_456: float,
     prob_56: float,
-    observed_rate: float | None,
+    observed_rate: Optional[float],
     rating_456: int,
     rating_56: int,
     comment_456: str,
@@ -225,3 +225,4 @@ def build_share_text(
 
 def normalize_styles() -> Dict[str, str]:
     return SETTING_COLORS.copy()
+
